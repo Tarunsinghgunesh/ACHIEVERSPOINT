@@ -9,75 +9,119 @@
 <body>
 
 <header>
-    <div class="container">
-        <h1>Achievers Point</h1>
-        <p>Excellence in IIT-JEE | NEET | NDA | Olympiads</p>
-    </div>
+    <h1>Achievers Point</h1>
+    <p>IIT-JEE | NEET | NDA | Olympiads</p>
 </header>
 
 <nav>
     <a href="#home">Home</a>
     <a href="#courses">Courses</a>
-    <a href="#features">Why Us</a>
+    <a href="#toppers">Results</a>
+    <a href="#faculty">Faculty</a>
     <a href="#contact">Contact</a>
 </nav>
 
-<section id="home" class="hero">
-    <h2>Top Coaching Institute in Bharatpur</h2>
-    <p>Small Batches | Expert Faculty | Scholarship up to 100%</p>
-    <a href="tel:+918005632472" class="btn">Call for Admission</a>
-</section>
+<!-- Image Slider -->
+<section class="slider" id="home">
+    <div class="slides">
+        <img src="https://images.unsplash.com/photo-1523580846011-d3a5bc25702b">
+        <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7">
+        <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f">
+    </div>
 
-<section id="courses">
-    <h2>Our Courses</h2>
-    <div class="cards">
-        <div class="card">
-            <h3>IIT-JEE (Main + Advanced)</h3>
-            <p>Complete preparation with test series and concept clarity.</p>
-        </div>
-        <div class="card">
-            <h3>NEET</h3>
-            <p>Medical entrance preparation with personalized attention.</p>
-        </div>
-        <div class="card">
-            <h3>NDA</h3>
-            <p>Structured preparation for defence aspirants.</p>
-        </div>
-        <div class="card">
-            <h3>Olympiads</h3>
-            <p>NTSE, KVPY and other competitive exams.</p>
-        </div>
+    <div class="slider-text">
+        <h2>Top Coaching Institute in Bharatpur</h2>
+        <p>Small Batches | Expert Faculty | Scholarship up to 100%</p>
+        <a href="tel:+918005632472" class="btn">Call Now</a>
     </div>
 </section>
 
-<section id="features">
-    <h2>Why Choose Achievers Point?</h2>
-    <ul>
-        <li>Experienced & Dedicated Faculty</li>
-        <li>Small Batch Size for Individual Attention</li>
-        <li>Regular Tests & Performance Analysis</li>
-        <li>Scholarship up to 100%</li>
-        <li>Proven Track Record of Selections</li>
-    </ul>
+<!-- Courses -->
+<section class="reveal" id="courses">
+<h2>Our Courses</h2>
+<div class="cards">
+<div class="card">IIT-JEE (Main + Advanced)</div>
+<div class="card">NEET Preparation</div>
+<div class="card">NDA Coaching</div>
+<div class="card">Olympiads (NTSE, KVPY)</div>
+</div>
 </section>
 
-<section id="contact">
-    <h2>Contact Us</h2>
-    <p><strong>Address:</strong> 305, Near MSJ College, Krishna Nagar, Bharatpur, Rajasthan 321001</p>
-    <p><strong>Phone:</strong> +91 80056 32472</p>
+<!-- Toppers Section -->
+<section class="reveal light" id="toppers">
+<h2>Our Top Results</h2>
 
-    <iframe 
-        src="https://maps.google.com/maps?q=MSJ%20College%20Bharatpur&t=&z=15&ie=UTF8&iwloc=&output=embed"
-        width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy">
-    </iframe>
+<div class="cards">
+<div class="card topper">
+<img src="https://randomuser.me/api/portraits/men/32.jpg">
+<h3>Rahul Sharma</h3>
+<p>NEET Score: 685</p>
+</div>
+
+<div class="card topper">
+<img src="https://randomuser.me/api/portraits/women/44.jpg">
+<h3>Priya Verma</h3>
+<p>JEE Percentile: 99.2%</p>
+</div>
+
+<div class="card topper">
+<img src="https://randomuser.me/api/portraits/men/56.jpg">
+<h3>Amit Singh</h3>
+<p>NEET Score: 670</p>
+</div>
+</div>
+
+</section>
+
+<!-- Faculty -->
+<section class="reveal" id="faculty">
+<h2>Our Faculty</h2>
+<div class="cards">
+<div class="card">
+<img src="https://images.unsplash.com/photo-1607746882042-944635dfe10e">
+<p>Physics Faculty</p>
+</div>
+<div class="card">
+<img src="https://images.unsplash.com/photo-1595152772835-219674b2a8a6">
+<p>Chemistry Faculty</p>
+</div>
+<div class="card">
+<img src="https://images.unsplash.com/photo-1580489944761-15a19d654956">
+<p>Biology Faculty</p>
+</div>
+</div>
+</section>
+
+<!-- Contact -->
+<section class="reveal light" id="contact">
+<h2>Contact Us</h2>
+<p>305, Near MSJ College, Krishna Nagar, Bharatpur</p>
+<p>Phone: +91 80056 32472</p>
+
+<iframe src="https://maps.google.com/maps?q=MSJ%20College%20Bharatpur&t=&z=15&ie=UTF8&iwloc=&output=embed"
+width="100%" height="300"></iframe>
 </section>
 
 <footer>
-    <p>© 2026 Achievers Point Bharatpur | All Rights Reserved</p>
+© 2026 Achievers Point Bharatpur
 </footer>
 
-<!-- WhatsApp Button -->
 <a href="https://wa.me/918005632472" class="whatsapp">WhatsApp</a>
+
+<!-- Animation Script -->
+<script>
+const reveals = document.querySelectorAll(".reveal");
+
+window.addEventListener("scroll", () => {
+reveals.forEach(el => {
+const windowHeight = window.innerHeight;
+const elementTop = el.getBoundingClientRect().top;
+if(elementTop < windowHeight - 100){
+el.classList.add("active");
+}
+});
+});
+</script>
 
 </body>
 </html>
