@@ -1,0 +1,92 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background: #0a4d8c;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+nav {
+    background: #222;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    padding: 15px;
+    display: inline-block;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background: #0a4d8c;
+}
+
+.hero {
+    background: url('https://images.unsplash.com/photo-1503676260728-1c00da094a0b');
+    background-size: cover;
+    color: white;
+    text-align: center;
+    padding: 120px 20px;
+}
+
+.btn {
+    background: #ff6600;
+    padding: 12px 25px;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    width: 250px;
+    margin: 15px;
+    padding: 20px;
+    box-shadow: 0 0 10px #ccc;
+    border-radius: 8px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    padding: 10px;
+    font-size: 18px;
+}
+
+footer {
+    background: #0a4d8c;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+.whatsapp {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #25d366;
+    color: white;
+    padding: 12px 18px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+}
