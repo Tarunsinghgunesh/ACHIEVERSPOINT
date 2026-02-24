@@ -10,13 +10,13 @@
 --primary:#0a4d8c;
 --secondary:#1e88e5;
 --accent:#ff6a00;
---light:#f4f7ff;
+--light:#f5f8ff;
 --dark:#0a2540;
 }
 
 body{
 margin:0;
-font-family:'Segoe UI',Arial;
+font-family:'Segoe UI',Arial,sans-serif;
 color:#333;
 scroll-behavior:smooth;
 }
@@ -57,15 +57,12 @@ color:white;
 padding:20px;
 }
 
-.hero-box{
-background:rgba(255,255,255,0.1);
-padding:40px;
-border-radius:15px;
-backdrop-filter:blur(8px);
+.hero-content{
+max-width:700px;
 }
 
 .hero h1{
-font-size:46px;
+font-size:48px;
 margin-bottom:10px;
 }
 
@@ -75,7 +72,7 @@ font-size:18px;
 
 .btn{
 display:inline-block;
-padding:14px 28px;
+padding:14px 30px;
 margin:10px;
 border-radius:6px;
 text-decoration:none;
@@ -114,16 +111,16 @@ transition:0.3s;
 }
 
 .card:hover{
-transform:translateY(-10px);
+transform:translateY(-8px);
 }
 
 /* Stats */
 .stats{
+background:var(--primary);
+color:white;
 display:flex;
 flex-wrap:wrap;
 justify-content:center;
-background:var(--primary);
-color:white;
 padding:60px 20px;
 }
 
@@ -136,16 +133,18 @@ font-size:40px;
 margin:0;
 }
 
-/* Results Banner */
-.result-banner{
+/* Result Section */
+.results{
 background:linear-gradient(120deg,var(--primary),var(--secondary));
 color:white;
-padding:70px 20px;
+padding:80px 20px;
 text-align:center;
 }
 
-.result-banner h2{
-font-size:36px;
+/* Contact */
+.contact-box{
+max-width:800px;
+margin:auto;
 }
 
 /* Footer */
@@ -171,7 +170,7 @@ text-align:center;
 </header>
 
 <section class="hero">
-<div class="hero-box">
+<div class="hero-content">
 <h1>Achievers Point Bharatpur</h1>
 <p>Best Coaching for IIT-JEE | NEET | NDA | Olympiads</p>
 <a href="#contact" class="btn primary">Get Admission</a>
@@ -202,12 +201,12 @@ text-align:center;
 <h2>Our Courses</h2>
 <div class="grid">
 <div class="card">
-<h3>NEET</h3>
-<p>Complete preparation for medical entrance with expert faculty.</p>
+<h3>NEET Preparation</h3>
+<p>Complete medical entrance preparation with expert faculty and test series.</p>
 </div>
 <div class="card">
 <h3>IIT-JEE</h3>
-<p>Main + Advanced with strong concept building.</p>
+<p>Main & Advanced preparation with strong concept building.</p>
 </div>
 <div class="card">
 <h3>NDA</h3>
@@ -215,7 +214,7 @@ text-align:center;
 </div>
 <div class="card">
 <h3>Foundation</h3>
-<p>NTSE, Olympiads & early preparation programs.</p>
+<p>NTSE, Olympiads and early preparation programs.</p>
 </div>
 </div>
 </section>
@@ -232,9 +231,9 @@ text-align:center;
 </div>
 </section>
 
-<section id="results" class="result-banner">
+<section id="results" class="results">
 <h2>Our Achievements</h2>
-<p>Top Scores in NEET & JEE Every Year</p>
+<p>Consistent top results in NEET & JEE every year</p>
 <br>
 <div class="grid">
 <div class="card" style="color:black;">
@@ -253,12 +252,17 @@ text-align:center;
 </section>
 
 <section id="contact" class="section light">
+<div class="contact-box">
 <h2>Contact Us</h2>
-<p>305, Near MSJ College, Krishna Nagar, Bharatpur</p>
+<p><b>Achievers Point</b></p>
+<p>305, Near MSJ College, Krishna Nagar, Bharatpur, Rajasthan 321001</p>
 <p>Phone: +91 80056 32472</p>
 
-<iframe src="https://maps.google.com/maps?q=MSJ%20College%20Bharatpur&t=&z=15&ie=UTF8&iwloc=&output=embed"
-width="100%" height="300"></iframe>
+<iframe 
+src="https://maps.google.com/maps?q=Achievers%20Point%20Bharatpur&t=&z=16&ie=UTF8&iwloc=&output=embed"
+width="100%" height="300" style="border:0;">
+</iframe>
+</div>
 </section>
 
 <footer>
