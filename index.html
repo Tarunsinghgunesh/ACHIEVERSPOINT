@@ -3,271 +3,537 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Achievers Point Bharatpur</title>
-
+<title>Achievers Point | IIT-JEE | NEET | NDA Coaching Bharatpur</title>
+<meta name="description" content="Best Coaching Institute in Bharatpur for IIT-JEE, NEET, NDA. Expert Faculty, Small Batches, Scholarship Available.">
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 <style>
 :root{
---primary:#0a4d8c;
---secondary:#1e88e5;
---accent:#ff6a00;
---light:#f5f8ff;
---dark:#0a2540;
+  --navy:#0a1628;
+  --blue:#1565c0;
+  --blue2:#1e88e5;
+  --gold:#f59e0b;
+  --light:#f0f4ff;
+  --white:#fff;
+  --gray:#64748b;
+  --text:#1e293b;
 }
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{font-family:'Plus Jakarta Sans',sans-serif;color:var(--text);background:var(--white);overflow-x:hidden;}
 
-body{
-margin:0;
-font-family:'Segoe UI',Arial,sans-serif;
-color:#333;
-scroll-behavior:smooth;
-}
+/* NAV */
+nav{position:fixed;top:0;left:0;right:0;z-index:999;display:flex;align-items:center;justify-content:space-between;padding:14px 5%;background:rgba(10,22,40,0.97);backdrop-filter:blur(10px);}
+.nav-logo{display:flex;align-items:center;gap:10px;text-decoration:none;}
+.logo-icon{width:40px;height:40px;background:var(--gold);border-radius:10px;display:flex;align-items:center;justify-content:center;font-family:'Syne',sans-serif;font-weight:800;font-size:1rem;color:var(--navy);}
+.logo-name{font-family:'Syne',sans-serif;font-weight:700;font-size:1.1rem;color:var(--white);}
+.logo-name span{color:var(--gold);}
+.nav-links{display:flex;gap:24px;list-style:none;}
+.nav-links a{color:rgba(255,255,255,0.8);text-decoration:none;font-size:0.88rem;font-weight:500;transition:color 0.2s;}
+.nav-links a:hover{color:var(--gold);}
+.nav-btn{background:var(--gold);color:var(--navy)!important;padding:9px 20px;border-radius:8px;font-weight:700!important;}
+.nav-btn:hover{background:#e88c00!important;transform:translateY(-1px);}
+.hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;background:none;border:none;}
+.hamburger span{width:22px;height:2px;background:white;border-radius:2px;}
 
-/* Navbar */
-.navbar{
-position:fixed;
-top:0;
-width:100%;
-background:white;
-padding:15px 50px;
-display:flex;
-justify-content:space-between;
-align-items:center;
-box-shadow:0 8px 25px rgba(0,0,0,0.08);
-z-index:1000;
-}
+/* HERO */
+.hero{min-height:100vh;background:var(--navy);display:flex;align-items:center;padding:110px 5% 70px;position:relative;overflow:hidden;}
+.hero::before{content:'';position:absolute;top:-150px;right:-150px;width:600px;height:600px;background:radial-gradient(circle,rgba(30,136,229,0.2),transparent 70%);border-radius:50%;}
+.hero::after{content:'';position:absolute;bottom:-100px;left:-100px;width:400px;height:400px;background:radial-gradient(circle,rgba(245,158,11,0.1),transparent 70%);border-radius:50%;}
+.hero-inner{position:relative;z-index:1;max-width:680px;}
+.hero-tag{display:inline-flex;align-items:center;gap:8px;background:rgba(245,158,11,0.15);border:1px solid rgba(245,158,11,0.35);color:var(--gold);padding:7px 15px;border-radius:30px;font-size:0.78rem;font-weight:600;letter-spacing:0.5px;margin-bottom:24px;animation:fadeUp 0.6s ease both;}
+.hero h1{font-family:'Syne',sans-serif;font-size:clamp(2.2rem,5vw,3.8rem);font-weight:800;color:var(--white);line-height:1.1;margin-bottom:18px;animation:fadeUp 0.7s 0.1s ease both;}
+.hero h1 em{color:var(--gold);font-style:normal;}
+.hero p{font-size:1.05rem;color:rgba(255,255,255,0.6);line-height:1.75;margin-bottom:32px;max-width:520px;animation:fadeUp 0.7s 0.2s ease both;}
+.hero-btns{display:flex;gap:12px;flex-wrap:wrap;animation:fadeUp 0.7s 0.3s ease both;}
+.btn-gold{background:var(--gold);color:var(--navy);padding:13px 28px;border-radius:10px;text-decoration:none;font-weight:700;font-size:0.95rem;transition:all 0.25s;box-shadow:0 8px 24px rgba(245,158,11,0.35);display:inline-flex;align-items:center;gap:7px;}
+.btn-gold:hover{background:#e88c00;transform:translateY(-2px);}
+.btn-wa{background:#25d366;color:white;padding:13px 28px;border-radius:10px;text-decoration:none;font-weight:600;font-size:0.95rem;transition:all 0.25s;display:inline-flex;align-items:center;gap:7px;box-shadow:0 8px 24px rgba(37,211,102,0.3);}
+.btn-wa:hover{background:#1ebe5d;transform:translateY(-2px);}
+.btn-outline-w{border:1.5px solid rgba(255,255,255,0.2);color:white;padding:13px 28px;border-radius:10px;text-decoration:none;font-weight:500;font-size:0.95rem;transition:all 0.25s;}
+.btn-outline-w:hover{border-color:var(--gold);background:rgba(245,158,11,0.08);}
 
-.navbar nav a{
-margin-left:20px;
-text-decoration:none;
-color:#333;
-font-weight:500;
-}
+/* STATS */
+.stats-bar{background:var(--blue);padding:28px 5%;}
+.stats-inner{display:flex;justify-content:center;gap:60px;flex-wrap:wrap;max-width:900px;margin:auto;}
+.stat{text-align:center;}
+.stat-n{font-family:'Syne',sans-serif;font-size:2rem;font-weight:800;color:var(--white);}
+.stat-n em{color:var(--gold);font-style:normal;}
+.stat-l{font-size:0.8rem;color:rgba(255,255,255,0.7);margin-top:3px;}
 
-/* Hero */
-.hero{
-height:100vh;
-background:linear-gradient(120deg,rgba(10,37,64,0.9),rgba(30,136,229,0.85)),
-url('https://images.unsplash.com/photo-1523580846011-d3a5bc25702b');
-background-size:cover;
-background-position:center;
-display:flex;
-align-items:center;
-justify-content:center;
-text-align:center;
-color:white;
-padding:20px;
-}
+/* SECTION COMMON */
+section{padding:80px 5%;}
+.sec-tag{display:inline-block;background:rgba(21,101,192,0.1);color:var(--blue);font-size:0.72rem;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;padding:5px 14px;border-radius:20px;margin-bottom:12px;}
+.sec-title{font-family:'Syne',sans-serif;font-size:clamp(1.7rem,3vw,2.4rem);font-weight:800;color:var(--navy);margin-bottom:10px;line-height:1.2;}
+.sec-sub{color:var(--gray);font-size:1rem;max-width:520px;line-height:1.7;margin-bottom:44px;}
 
-.hero-content{
-max-width:700px;
-}
+/* COURSES */
+#courses{background:var(--light);}
+.courses-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:22px;}
+.course-card{background:var(--white);border-radius:18px;padding:30px;border:1.5px solid transparent;transition:all 0.3s;position:relative;overflow:hidden;}
+.course-card::before{content:'';position:absolute;top:0;left:0;width:0;height:4px;background:linear-gradient(90deg,var(--blue),var(--gold));transition:width 0.3s;}
+.course-card:hover{border-color:rgba(21,101,192,0.15);transform:translateY(-4px);box-shadow:0 20px 50px rgba(21,101,192,0.1);}
+.course-card:hover::before{width:100%;}
+.course-icon{width:52px;height:52px;border-radius:14px;display:flex;align-items:center;justify-content:center;font-size:1.5rem;margin-bottom:18px;}
+.ci-jee{background:rgba(21,101,192,0.1);}
+.ci-neet{background:rgba(239,68,68,0.1);}
+.ci-nda{background:rgba(245,158,11,0.1);}
+.ci-found{background:rgba(16,185,129,0.1);}
+.course-card h3{font-family:'Syne',sans-serif;font-size:1.1rem;font-weight:700;margin-bottom:8px;color:var(--navy);}
+.course-card p{font-size:0.88rem;color:var(--gray);line-height:1.6;margin-bottom:16px;}
+.course-badge{display:inline-block;background:var(--light);color:var(--blue);font-size:0.75rem;font-weight:600;padding:4px 12px;border-radius:20px;}
+.course-cta{display:inline-flex;align-items:center;gap:5px;color:var(--blue);font-size:0.85rem;font-weight:600;text-decoration:none;margin-top:14px;transition:gap 0.2s;}
+.course-cta:hover{gap:9px;}
 
-.hero h1{
-font-size:48px;
-margin-bottom:10px;
-}
+/* FEATURES */
+#features{background:var(--white);}
+.features-grid{display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:center;}
+.feat-list{display:flex;flex-direction:column;gap:16px;}
+.feat-item{display:flex;align-items:flex-start;gap:14px;padding:18px;border-radius:14px;transition:background 0.2s;cursor:default;}
+.feat-item:hover{background:var(--light);}
+.feat-icon{width:44px;height:44px;background:var(--blue);border-radius:12px;display:flex;align-items:center;justify-content:center;color:white;font-size:1.1rem;flex-shrink:0;}
+.feat-item h4{font-family:'Syne',sans-serif;font-weight:700;margin-bottom:3px;font-size:0.95rem;}
+.feat-item p{font-size:0.86rem;color:var(--gray);line-height:1.6;}
+.feat-visual{background:var(--navy);border-radius:22px;padding:36px;}
+.fv-title{font-family:'Syne',sans-serif;font-size:1.1rem;font-weight:700;color:white;margin-bottom:20px;}
+.result-list{list-style:none;display:flex;flex-direction:column;gap:14px;}
+.result-list li{display:flex;align-items:center;gap:12px;color:rgba(255,255,255,0.85);font-size:0.9rem;}
+.result-list li::before{content:'★';color:var(--gold);font-size:0.9rem;flex-shrink:0;}
+.result-numbers{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:22px;}
+.rn-card{background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:12px;padding:16px;text-align:center;}
+.rn-num{font-family:'Syne',sans-serif;font-size:1.8rem;font-weight:800;color:var(--gold);}
+.rn-label{font-size:0.78rem;color:rgba(255,255,255,0.6);margin-top:3px;}
 
-.hero p{
-font-size:18px;
-}
+/* FEES */
+#fees{background:var(--light);}
+.fees-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:22px;}
+.fee-card{background:var(--white);border-radius:18px;padding:30px;text-align:center;border:2px solid transparent;transition:all 0.3s;position:relative;}
+.fee-card.featured{border-color:var(--gold);box-shadow:0 20px 50px rgba(245,158,11,0.15);}
+.fee-badge{position:absolute;top:-12px;left:50%;transform:translateX(-50%);background:var(--gold);color:var(--navy);font-size:0.72rem;font-weight:700;padding:4px 16px;border-radius:20px;white-space:nowrap;}
+.fee-card:hover{transform:translateY(-4px);box-shadow:0 20px 40px rgba(0,0,0,0.08);}
+.fee-icon{font-size:2rem;margin-bottom:14px;}
+.fee-card h3{font-family:'Syne',sans-serif;font-weight:700;font-size:1.1rem;margin-bottom:8px;color:var(--navy);}
+.fee-price{font-family:'Syne',sans-serif;font-size:1.8rem;font-weight:800;color:var(--blue);margin:14px 0 4px;}
+.fee-price span{font-size:0.9rem;font-weight:400;color:var(--gray);}
+.fee-features{list-style:none;text-align:left;margin:16px 0;display:flex;flex-direction:column;gap:8px;}
+.fee-features li{font-size:0.85rem;color:var(--gray);display:flex;align-items:center;gap:8px;}
+.fee-features li::before{content:'✓';color:var(--blue);font-weight:700;flex-shrink:0;}
+.fee-btn{display:block;background:var(--blue);color:white;padding:12px;border-radius:10px;text-decoration:none;font-weight:600;font-size:0.9rem;margin-top:18px;transition:all 0.25s;}
+.fee-btn:hover{background:#0d47a1;transform:translateY(-1px);}
+.fee-card.featured .fee-btn{background:var(--gold);color:var(--navy);}
+.fee-card.featured .fee-btn:hover{background:#e88c00;}
 
-.btn{
-display:inline-block;
-padding:14px 30px;
-margin:10px;
-border-radius:6px;
-text-decoration:none;
-font-weight:bold;
-}
+/* RESULTS */
+#results{background:var(--navy);padding:80px 5%;}
+.results-inner{max-width:900px;margin:auto;}
+.results-inner .sec-tag{background:rgba(245,158,11,0.15);color:var(--gold);}
+.results-inner .sec-title{color:white;}
+.results-inner .sec-sub{color:rgba(255,255,255,0.6);}
+.results-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:18px;}
+.result-card{background:rgba(255,255,255,0.05);border:1px solid rgba(255,255,255,0.1);border-radius:16px;padding:28px 20px;text-align:center;transition:all 0.3s;}
+.result-card:hover{background:rgba(255,255,255,0.08);transform:translateY(-3px);}
+.result-score{font-family:'Syne',sans-serif;font-size:2rem;font-weight:800;color:var(--gold);}
+.result-exam{font-size:0.85rem;color:rgba(255,255,255,0.7);margin-top:6px;}
+.result-year{font-size:0.75rem;color:rgba(255,255,255,0.4);margin-top:3px;}
 
-.primary{background:var(--accent);color:white;}
-.secondary{background:white;color:var(--primary);}
+/* TESTIMONIALS */
+#testimonials{background:var(--light);}
+.testi-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:22px;}
+.testi-card{background:white;border-radius:16px;padding:26px;border:1.5px solid rgba(21,101,192,0.08);transition:box-shadow 0.3s;}
+.testi-card:hover{box-shadow:0 12px 40px rgba(21,101,192,0.1);}
+.stars{color:var(--gold);font-size:0.95rem;margin-bottom:12px;}
+.testi-card>p{font-size:0.9rem;color:#374151;line-height:1.7;margin-bottom:18px;font-style:italic;}
+.reviewer{display:flex;align-items:center;gap:12px;}
+.r-av{width:40px;height:40px;border-radius:50%;background:var(--blue);display:flex;align-items:center;justify-content:center;color:white;font-family:'Syne',sans-serif;font-weight:700;font-size:0.95rem;}
+.r-name{font-weight:700;font-size:0.88rem;color:var(--navy);}
+.r-role{font-size:0.75rem;color:var(--gray);}
 
-/* Sections */
-.section{
-padding:100px 20px;
-text-align:center;
-}
+/* CONTACT */
+#contact{background:var(--white);}
+.contact-grid{display:grid;grid-template-columns:1fr 1.3fr;gap:50px;align-items:start;}
+.contact-info h3{font-family:'Syne',sans-serif;font-size:1.3rem;font-weight:700;margin-bottom:12px;}
+.contact-info>p{color:var(--gray);line-height:1.7;margin-bottom:26px;}
+.c-methods{display:flex;flex-direction:column;gap:11px;}
+.c-method{display:flex;align-items:center;gap:13px;text-decoration:none;color:white;padding:13px 16px;border-radius:12px;font-weight:600;font-size:0.88rem;transition:all 0.25s;box-shadow:0 3px 12px rgba(0,0,0,0.1);}
+.c-method:hover{transform:translateY(-2px);box-shadow:0 8px 20px rgba(0,0,0,0.15);}
+.c-method i{font-size:1.1rem;flex-shrink:0;}
+.cm-phone{background:linear-gradient(135deg,#1565c0,#0d47a1);}
+.cm-wa{background:linear-gradient(135deg,#25d366,#128c50);}
+.cm-loc{background:linear-gradient(135deg,#f59e0b,#d97706);}
+.c-form{display:flex;flex-direction:column;gap:14px;}
+.c-form input,.c-form select,.c-form textarea{padding:12px 14px;border:1.5px solid #e2e8f0;border-radius:10px;font-family:'Plus Jakarta Sans',sans-serif;font-size:0.92rem;outline:none;transition:border-color 0.2s;}
+.c-form input:focus,.c-form select:focus,.c-form textarea:focus{border-color:var(--blue);}
+.c-form textarea{min-height:110px;resize:vertical;}
+.c-form-row{display:grid;grid-template-columns:1fr 1fr;gap:14px;}
+.c-submit{background:var(--blue);color:white;border:none;padding:14px;border-radius:10px;font-family:'Syne',sans-serif;font-size:1rem;font-weight:700;cursor:pointer;transition:all 0.25s;box-shadow:0 8px 24px rgba(21,101,192,0.35);}
+.c-submit:hover{background:#0d47a1;transform:translateY(-1px);}
 
-.light{background:var(--light);}
+/* FOOTER */
+footer{background:var(--navy);color:rgba(255,255,255,0.7);padding:40px 5% 24px;}
+.footer-top{display:flex;justify-content:space-between;flex-wrap:wrap;gap:24px;padding-bottom:30px;border-bottom:1px solid rgba(255,255,255,0.1);margin-bottom:22px;}
+.ft-brand p{font-size:0.86rem;margin-top:10px;max-width:220px;line-height:1.6;}
+.ft-logo{font-family:'Syne',sans-serif;font-weight:800;font-size:1.2rem;color:white;}
+.ft-logo em{color:var(--gold);font-style:normal;}
+.ft-col h4{font-family:'Syne',sans-serif;color:white;font-weight:700;margin-bottom:12px;font-size:0.88rem;}
+.ft-col ul{list-style:none;display:flex;flex-direction:column;gap:7px;}
+.ft-col a{color:rgba(255,255,255,0.6);text-decoration:none;font-size:0.85rem;transition:color 0.2s;}
+.ft-col a:hover{color:var(--gold);}
+.ft-bottom{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;font-size:0.8rem;}
+.ft-bottom a{color:rgba(255,255,255,0.5);text-decoration:none;}
+.ft-bottom a:hover{color:white;}
 
-/* Grid */
-.grid{
-display:flex;
-flex-wrap:wrap;
-justify-content:center;
-max-width:1100px;
-margin:auto;
-}
+/* FLOAT */
+.float-btns{position:fixed;right:18px;bottom:28px;display:flex;flex-direction:column;gap:10px;z-index:998;}
+.fb{display:flex;align-items:center;gap:9px;padding:11px 15px 11px 12px;border-radius:50px;color:white;text-decoration:none;box-shadow:0 4px 16px rgba(0,0,0,0.2);transition:all 0.3s;overflow:hidden;max-width:50px;white-space:nowrap;}
+.fb:hover{max-width:180px;transform:translateY(-2px);}
+.fb i{font-size:1.15rem;flex-shrink:0;width:22px;text-align:center;}
+.fb .fl{font-size:0.8rem;font-weight:600;opacity:0;transition:opacity 0.15s 0.07s;}
+.fb:hover .fl{opacity:1;}
+.fb-wa{background:#25d366;}
+.fb-call{background:var(--blue);}
 
-/* Cards */
-.card{
-width:260px;
-margin:18px;
-padding:30px;
-background:white;
-border-radius:12px;
-box-shadow:0 15px 35px rgba(0,0,0,0.08);
-transition:0.3s;
-}
+.scroll-top{position:fixed;right:18px;bottom:188px;width:40px;height:40px;border-radius:50%;background:var(--navy);border:1.5px solid rgba(245,158,11,0.4);color:white;display:flex;align-items:center;justify-content:center;text-decoration:none;font-size:0.85rem;z-index:997;opacity:0;transition:all 0.3s;box-shadow:0 4px 12px rgba(0,0,0,0.2);}
+.scroll-top.show{opacity:1;}
+.scroll-top:hover{background:var(--gold);color:var(--navy);}
 
-.card:hover{
-transform:translateY(-8px);
-}
+/* REVEAL */
+.reveal{opacity:0;transform:translateY(26px);transition:opacity 0.6s,transform 0.6s;}
+.reveal.visible{opacity:1;transform:translateY(0);}
 
-/* Stats */
-.stats{
-background:var(--primary);
-color:white;
-display:flex;
-flex-wrap:wrap;
-justify-content:center;
-padding:60px 20px;
-}
+@keyframes fadeUp{from{opacity:0;transform:translateY(22px);}to{opacity:1;transform:translateY(0);}}
 
-.stat{
-margin:20px 40px;
-}
-
-.stat h2{
-font-size:40px;
-margin:0;
-}
-
-/* Result Section */
-.results{
-background:linear-gradient(120deg,var(--primary),var(--secondary));
-color:white;
-padding:80px 20px;
-text-align:center;
-}
-
-/* Contact */
-.contact-box{
-max-width:800px;
-margin:auto;
-}
-
-/* Footer */
-footer{
-background:var(--dark);
-color:white;
-padding:30px;
-text-align:center;
+/* MOBILE */
+@media(max-width:768px){
+  .nav-links{display:none;flex-direction:column;position:absolute;top:100%;left:0;right:0;background:var(--navy);padding:20px 5%;gap:14px;}
+  .nav-links.open{display:flex;}
+  .hamburger{display:flex;}
+  .features-grid,.contact-grid{grid-template-columns:1fr;}
+  .c-form-row{grid-template-columns:1fr;}
+  .stats-inner{gap:30px;}
+  .footer-top{flex-direction:column;}
+  .fb .fl{display:none;}
+  .fb{max-width:50px!important;}
 }
 </style>
 </head>
-
 <body>
 
-<header class="navbar">
-<div><b>Achievers Point</b></div>
-<nav>
-<a href="#courses">Courses</a>
-<a href="#features">Why Us</a>
-<a href="#results">Results</a>
-<a href="#contact">Contact</a>
+<!-- NAV -->
+<nav id="nav">
+  <a href="#" class="nav-logo">
+    <div class="logo-icon">AP</div>
+    <span class="logo-name"><em>Achievers</em> Point</span>
+  </a>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="#courses">Courses</a></li>
+    <li><a href="#features">Why Us</a></li>
+    <li><a href="#fees">Fees</a></li>
+    <li><a href="#results">Results</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="https://wa.me/919079368240?text=Hi!%20I%20want%20admission%20info%20for%20Achievers%20Point." target="_blank" class="nav-btn">Get Admission</a></li>
+  </ul>
+  <button class="hamburger" onclick="toggleNav()" aria-label="menu"><span></span><span></span><span></span></button>
 </nav>
-</header>
 
-<section class="hero">
-<div class="hero-content">
-<h1>Achievers Point Bharatpur</h1>
-<p>Best Coaching for IIT-JEE | NEET | NDA | Olympiads</p>
-<a href="#contact" class="btn primary">Get Admission</a>
-<a href="#courses" class="btn secondary">Explore Courses</a>
-</div>
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="hero-inner">
+    <div class="hero-tag"><i class="fas fa-star"></i> Bharatpur's Top Coaching Institute</div>
+    <h1>Crack <em>IIT-JEE, NEET</em> & NDA With Expert Guidance</h1>
+    <p>Small batches, experienced faculty, and a proven track record of results. Your success story starts here at Achievers Point, Bharatpur.</p>
+    <div class="hero-btns">
+      <a href="#contact" class="btn-gold"><i class="fas fa-graduation-cap"></i> Get Admission</a>
+      <a href="https://wa.me/919079368240?text=Hi!%20I%20want%20to%20know%20about%20courses%20at%20Achievers%20Point." target="_blank" class="btn-wa"><i class="fab fa-whatsapp"></i> WhatsApp Us</a>
+      <a href="#courses" class="btn-outline-w">Explore Courses</a>
+    </div>
+  </div>
 </section>
 
-<div class="stats">
-<div class="stat">
-<h2>10+</h2>
-<p>Years Experience</p>
-</div>
-<div class="stat">
-<h2>1000+</h2>
-<p>Students</p>
-</div>
-<div class="stat">
-<h2>100+</h2>
-<p>Selections</p>
-</div>
-<div class="stat">
-<h2>100%</h2>
-<p>Scholarship</p>
-</div>
+<!-- STATS -->
+<div class="stats-bar">
+  <div class="stats-inner">
+    <div class="stat"><div class="stat-n" id="s1">0<em>+</em></div><div class="stat-l">Years Experience</div></div>
+    <div class="stat"><div class="stat-n" id="s2">0<em>+</em></div><div class="stat-l">Students Enrolled</div></div>
+    <div class="stat"><div class="stat-n" id="s3">0<em>+</em></div><div class="stat-l">Total Selections</div></div>
+    <div class="stat"><div class="stat-n" id="s4">0<em>%</em></div><div class="stat-l">Scholarship Available</div></div>
+  </div>
 </div>
 
-<section id="courses" class="section">
-<h2>Our Courses</h2>
-<div class="grid">
-<div class="card">
-<h3>NEET Preparation</h3>
-<p>Complete medical entrance preparation with expert faculty and test series.</p>
-</div>
-<div class="card">
-<h3>IIT-JEE</h3>
-<p>Main & Advanced preparation with strong concept building.</p>
-</div>
-<div class="card">
-<h3>NDA</h3>
-<p>Focused training for defence aspirants.</p>
-</div>
-<div class="card">
-<h3>Foundation</h3>
-<p>NTSE, Olympiads and early preparation programs.</p>
-</div>
-</div>
+<!-- COURSES -->
+<section id="courses">
+  <div class="sec-tag">Our Programs</div>
+  <div class="sec-title">Choose Your Path to Success</div>
+  <p class="sec-sub">Expert-designed courses for every competitive exam with dedicated faculty and study material.</p>
+  <div class="courses-grid reveal">
+    <div class="course-card">
+      <div class="course-icon ci-jee">⚛️</div>
+      <h3>IIT-JEE (Main + Advanced)</h3>
+      <p>Comprehensive preparation with concept-building, problem solving sessions and full-length mock tests.</p>
+      <span class="course-badge">Physics • Chemistry • Maths</span><br>
+      <a href="https://wa.me/919079368240?text=Hi!%20I%20want%20details%20about%20IIT-JEE%20course." target="_blank" class="course-cta">Enquire Now <i class="fas fa-arrow-right"></i></a>
+    </div>
+    <div class="course-card">
+      <div class="course-icon ci-neet">🧬</div>
+      <h3>NEET Preparation</h3>
+      <p>Complete medical entrance preparation with biology focus, regular tests and one-on-one doubt sessions.</p>
+      <span class="course-badge">Biology • Physics • Chemistry</span><br>
+      <a href="https://wa.me/919079368240?text=Hi!%20I%20want%20details%20about%20NEET%20course." target="_blank" class="course-cta">Enquire Now <i class="fas fa-arrow-right"></i></a>
+    </div>
+    <div class="course-card">
+      <div class="course-icon ci-nda">🎖️</div>
+      <h3>NDA Coaching</h3>
+      <p>Focused defence services preparation covering Maths, GAT, and physical fitness training guidance.</p>
+      <span class="course-badge">Maths • GAT • English</span><br>
+      <a href="https://wa.me/919079368240?text=Hi!%20I%20want%20details%20about%20NDA%20course." target="_blank" class="course-cta">Enquire Now <i class="fas fa-arrow-right"></i></a>
+    </div>
+    <div class="course-card">
+      <div class="course-icon ci-found">📐</div>
+      <h3>Foundation (Class 9–10)</h3>
+      <p>Early preparation for NTSE, Olympiads and building strong fundamentals for future competitive exams.</p>
+      <span class="course-badge">All Subjects • Olympiad</span><br>
+      <a href="https://wa.me/919079368240?text=Hi!%20I%20want%20details%20about%20Foundation%20course." target="_blank" class="course-cta">Enquire Now <i class="fas fa-arrow-right"></i></a>
+    </div>
+  </div>
 </section>
 
-<section id="features" class="section light">
-<h2>Why Choose Achievers Point?</h2>
-<div class="grid">
-<div class="card">Experienced Faculty</div>
-<div class="card">Small Batch Size</div>
-<div class="card">Personal Attention</div>
-<div class="card">Regular Tests & Analysis</div>
-<div class="card">Doubt Sessions</div>
-<div class="card">Scholarship Programs</div>
-</div>
+<!-- WHY US -->
+<section id="features" style="background:var(--light);">
+  <div class="features-grid reveal">
+    <div>
+      <div class="sec-tag">Why Choose Us</div>
+      <div class="sec-title">We Don't Just Teach — We Build Champions</div>
+      <p class="sec-sub">Our approach is student-first — every batch is small, every doubt is solved, every student matters.</p>
+      <div class="feat-list">
+        <div class="feat-item">
+          <div class="feat-icon"><i class="fas fa-users"></i></div>
+          <div><h4>Small Batch Size</h4><p>Maximum 25 students per batch — personal attention for every student.</p></div>
+        </div>
+        <div class="feat-item">
+          <div class="feat-icon"><i class="fas fa-chalkboard-teacher"></i></div>
+          <div><h4>Expert Faculty</h4><p>Experienced teachers with IIT/AIIMS background and 10+ years of teaching.</p></div>
+        </div>
+        <div class="feat-item">
+          <div class="feat-icon"><i class="fas fa-clipboard-list"></i></div>
+          <div><h4>Regular Tests & Analysis</h4><p>Weekly tests with detailed performance analysis to track your progress.</p></div>
+        </div>
+        <div class="feat-item">
+          <div class="feat-icon"><i class="fas fa-rupee-sign"></i></div>
+          <div><h4>Scholarship Programs</h4><p>100% scholarship available based on merit — education shouldn't have barriers.</p></div>
+        </div>
+      </div>
+    </div>
+    <div class="feat-visual">
+      <div class="fv-title">🏆 Our Track Record</div>
+      <ul class="result-list">
+        <li>Consistent top scores in NEET every year</li>
+        <li>IIT-JEE selections since 2015</li>
+        <li>NDA selections — Army, Navy & Air Force</li>
+        <li>NTSE & Olympiad winners every year</li>
+        <li>100+ total selections in last 3 years</li>
+      </ul>
+      <div class="result-numbers">
+        <div class="rn-card"><div class="rn-num">685</div><div class="rn-label">NEET Top Score</div></div>
+        <div class="rn-card"><div class="rn-num">99%</div><div class="rn-label">JEE Percentile</div></div>
+        <div class="rn-card"><div class="rn-num">100+</div><div class="rn-label">Total Selections</div></div>
+        <div class="rn-card"><div class="rn-num">10+</div><div class="rn-label">Years Experience</div></div>
+      </div>
+    </div>
+  </div>
 </section>
 
-<section id="results" class="results">
-<h2>Our Achievements</h2>
-<p>Consistent top results in NEET & JEE every year</p>
-<br>
-<div class="grid">
-<div class="card" style="color:black;">
-<h3>NEET Top Score</h3>
-<h2>685</h2>
-</div>
-<div class="card" style="color:black;">
-<h3>JEE Percentile</h3>
-<h2>99%</h2>
-</div>
-<div class="card" style="color:black;">
-<h3>Total Selections</h3>
-<h2>100+</h2>
-</div>
-</div>
+<!-- FEES -->
+<section id="fees">
+  <div class="sec-tag">Fee Structure</div>
+  <div class="sec-title">Transparent & Affordable Pricing</div>
+  <p class="sec-sub">No hidden charges. Scholarship available for meritorious students.</p>
+  <div class="fees-grid reveal">
+    <div class="fee-card">
+      <div class="fee-icon">📐</div>
+      <h3>Foundation</h3>
+      <p style="font-size:0.85rem;color:var(--gray);margin-bottom:8px;">Class 9–10</p>
+      <div class="fee-price">₹18,000<span>/year</span></div>
+      <ul class="fee-features">
+        <li>All Subject Classes</li>
+        <li>Olympiad Preparation</li>
+        <li>Weekly Tests</li>
+        <li>Study Material</li>
+      </ul>
+      <a href="https://wa.me/919079368240?text=Hi!%20I%20want%20admission%20in%20Foundation%20batch." target="_blank" class="fee-btn">Enquire Now</a>
+    </div>
+    <div class="fee-card featured">
+      <div class="fee-badge">⭐ Most Popular</div>
+      <div class="fee-icon">🧬</div>
+      <h3>NEET Course</h3>
+      <p style="font-size:0.85rem;color:var(--gray);margin-bottom:8px;">Class 11–12 + Dropper</p>
+      <div class="fee-price">₹45,000<span>/year</span></div>
+      <ul class="fee-features">
+        <li>Bio + Physics + Chemistry</li>
+        <li>Daily Doubt Sessions</li>
+        <li>Full Mock Test Series</li>
+        <li>Study Material Included</li>
+        <li>Personal Mentoring</li>
+      </ul>
+      <a href="https://wa.me/919079368240?text=Hi!%20I%20want%20admission%20in%20NEET%20batch." target="_blank" class="fee-btn">Get Admission</a>
+    </div>
+    <div class="fee-card">
+      <div class="fee-icon">⚛️</div>
+      <h3>IIT-JEE Course</h3>
+      <p style="font-size:0.85rem;color:var(--gray);margin-bottom:8px;">Class 11–12 + Dropper</p>
+      <div class="fee-price">₹50,000<span>/year</span></div>
+      <ul class="fee-features">
+        <li>Phy + Chem + Maths</li>
+        <li>Advanced Problem Solving</li>
+        <li>Mock Test Series</li>
+        <li>Study Material Included</li>
+        <li>Personal Mentoring</li>
+      </ul>
+      <a href="https://wa.me/919079368240?text=Hi!%20I%20want%20admission%20in%20IIT-JEE%20batch." target="_blank" class="fee-btn">Enquire Now</a>
+    </div>
+  </div>
+  <p style="text-align:center;margin-top:28px;color:var(--gray);font-size:0.9rem;">
+    <i class="fas fa-info-circle" style="color:var(--blue);"></i>
+    Scholarship up to 100% available for meritorious students. <a href="https://wa.me/919079368240?text=Hi!%20I%20want%20scholarship%20details." target="_blank" style="color:var(--blue);font-weight:600;">Ask about Scholarship →</a>
+  </p>
 </section>
 
-<section id="contact" class="section light">
-<div class="contact-box">
-<h2>Contact Us</h2>
-<p><b>Achievers Point</b></p>
-<p>305, Near MSJ College, Krishna Nagar, Bharatpur, Rajasthan 321001</p>
-<p>Phone: +91 80056 32472</p>
-
-<iframe 
-src="https://maps.google.com/maps?q=Achievers%20Point%20Bharatpur&t=&z=16&ie=UTF8&iwloc=&output=embed"
-width="100%" height="300" style="border:0;">
-</iframe>
-</div>
+<!-- RESULTS -->
+<section id="results">
+  <div class="results-inner">
+    <div class="sec-tag">Our Results</div>
+    <div class="sec-title">Proven Track Record</div>
+    <p class="sec-sub">Our students have consistently cracked top competitive exams year after year.</p>
+    <div class="results-grid reveal">
+      <div class="result-card"><div class="result-score">685</div><div class="result-exam">NEET Score</div><div class="result-year">Top Score</div></div>
+      <div class="result-card"><div class="result-score">99.2%</div><div class="result-exam">JEE Percentile</div><div class="result-year">Advanced</div></div>
+      <div class="result-card"><div class="result-score">100+</div><div class="result-exam">Total Selections</div><div class="result-year">All Exams</div></div>
+      <div class="result-card"><div class="result-score">50+</div><div class="result-exam">NEET Qualifiers</div><div class="result-year">Last 3 Years</div></div>
+      <div class="result-card"><div class="result-score">1000+</div><div class="result-exam">Students Trained</div><div class="result-year">Since 2014</div></div>
+    </div>
+  </div>
 </section>
 
+<!-- TESTIMONIALS -->
+<section id="testimonials" style="background:var(--light);">
+  <div class="sec-tag">Student Reviews</div>
+  <div class="sec-title">What Our Students Say</div>
+  <p class="sec-sub">Real words from real achievers.</p>
+  <div class="testi-grid reveal">
+    <div class="testi-card">
+      <div class="stars">★★★★★</div>
+      <p>"Achievers Point ki faculty ne meri NEET preparation ko ek alag level pe le gaya. Doubt sessions roz hote the aur sabka solution milta tha. 680+ score kiya!"</p>
+      <div class="reviewer"><div class="r-av">A</div><div><div class="r-name">Ankita Sharma</div><div class="r-role">NEET Qualifier 2024</div></div></div>
+    </div>
+    <div class="testi-card">
+      <div class="stars">★★★★★</div>
+      <p>"Small batch size ki wajah se teacher ka poora dhyan milta tha. IIT-JEE Advanced mein 99 percentile aaya — Achievers Point ka bahut bada haath hai is mein."</p>
+      <div class="reviewer"><div class="r-av">R</div><div><div class="r-name">Rahul Gupta</div><div class="r-role">IIT-JEE Qualifier 2024</div></div></div>
+    </div>
+    <div class="testi-card">
+      <div class="stars">★★★★★</div>
+      <p>"NDA coaching ke liye best place in Bharatpur. Physical aur written dono ki taiyari achi tarah se karwai. Proud to be an Achiever!"</p>
+      <div class="reviewer"><div class="r-av">V</div><div><div class="r-name">Vikram Singh</div><div class="r-role">NDA Selected 2023</div></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="sec-tag">Admissions Open</div>
+  <div class="sec-title">Start Your Journey Today</div>
+  <div class="contact-grid reveal">
+    <div class="contact-info">
+      <h3>Get In Touch</h3>
+      <p>Fill the form or contact us directly — we'll guide you to the right course for your goal!</p>
+      <div class="c-methods">
+        <a href="tel:+918005632472" class="c-method cm-phone"><i class="fas fa-phone-alt"></i><span>+91 80056 32472</span></a>
+        <a href="https://wa.me/919079368240?text=Hi!%20I%20want%20admission%20details%20for%20Achievers%20Point." target="_blank" class="c-method cm-wa"><i class="fab fa-whatsapp"></i><span>WhatsApp for Quick Reply</span></a>
+        <a href="https://maps.google.com/?q=MSJ+College+Bharatpur+Rajasthan" target="_blank" class="c-method cm-loc"><i class="fas fa-map-marker-alt"></i><span>305, Near MSJ College, Krishna Nagar, Bharatpur</span></a>
+      </div>
+    </div>
+    <div>
+      <form class="c-form" onsubmit="submitForm(event,'achievers')">
+        <div class="c-form-row">
+          <input type="text" name="name" placeholder="Student Name *" required>
+          <input type="tel" name="phone" placeholder="Phone Number *" required>
+        </div>
+        <input type="text" name="class" placeholder="Current Class / Year">
+        <select name="course">
+          <option value="">Select Course</option>
+          <option>IIT-JEE (Main + Advanced)</option>
+          <option>NEET Preparation</option>
+          <option>NDA Coaching</option>
+          <option>Foundation (Class 9-10)</option>
+        </select>
+        <textarea name="message" placeholder="Any specific questions or requirements..."></textarea>
+        <button type="submit" class="c-submit" id="achievers-btn">Send Enquiry 🚀</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
 <footer>
-© 2026 Achievers Point Bharatpur | Demo by TK Web Solutions
+  <div class="footer-top">
+    <div class="ft-brand">
+      <div class="ft-logo"><em>Achievers</em> Point</div>
+      <p>Best coaching institute in Bharatpur for IIT-JEE, NEET & NDA. Building toppers since 2014.</p>
+    </div>
+    <div class="ft-col">
+      <h4>Courses</h4>
+      <ul>
+        <li><a href="#courses">IIT-JEE</a></li>
+        <li><a href="#courses">NEET</a></li>
+        <li><a href="#courses">NDA</a></li>
+        <li><a href="#courses">Foundation</a></li>
+      </ul>
+    </div>
+    <div class="ft-col">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="#features">Why Choose Us</a></li>
+        <li><a href="#fees">Fee Structure</a></li>
+        <li><a href="#results">Results</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="ft-bottom">
+    <p>© 2026 Achievers Point Bharatpur. All rights reserved.</p>
+    <p>Demo Website by <a href="https://tarunsinghgunesh.github.io/TK-Web-Solutions/" target="_blank">TK Web Solutions</a></p>
+  </div>
 </footer>
 
+<!-- FLOATING -->
+<div class="float-btns">
+  <a href="https://wa.me/919079368240?text=Hi!%20I%20want%20admission%20details%20for%20Achievers%20Point." target="_blank" class="fb fb-wa"><i class="fab fa-whatsapp"></i><span class="fl">WhatsApp Us</span></a>
+  <a href="tel:+918005632472" class="fb fb-call"><i class="fas fa-phone"></i><span class="fl">Call Now</span></a>
+</div>
+<a href="#home" class="scroll-top" id="st"><i class="fas fa-chevron-up"></i></a>
+
+<script>
+window.addEventListener('scroll',()=>{
+  document.getElementById('nav').style.boxShadow=window.scrollY>30?'0 4px 20px rgba(0,0,0,0.3)':'none';
+  document.getElementById('st').classList.toggle('show',window.scrollY>400);
+});
+function toggleNav(){document.getElementById('navLinks').classList.toggle('open');}
+document.querySelectorAll('.nav-links a').forEach(a=>a.addEventListener('click',()=>document.getElementById('navLinks').classList.remove('open')));
+const ro=new IntersectionObserver(e=>e.forEach(x=>{if(x.isIntersecting)x.target.classList.add('visible');}),{threshold:0.1});
+document.querySelectorAll('.reveal').forEach(el=>ro.observe(el));
+let cnt=false;
+const so=new IntersectionObserver(e=>{if(e[0].isIntersecting&&!cnt){cnt=true;counter('s1',10,'+');counter('s2',1000,'+');counter('s3',100,'+');counter('s4',100,'%');}},{threshold:0.5});
+so.observe(document.querySelector('.stats-bar'));
+function counter(id,target,suf){let c=0;const t=setInterval(()=>{c=Math.min(c+Math.ceil(target/50),target);document.getElementById(id).innerHTML=c+'<em>'+suf+'</em>';if(c>=target)clearInterval(t);},30);}
+async function submitForm(e,id){
+  e.preventDefault();
+  const btn=document.getElementById(id+'-btn');
+  btn.textContent='Sending...'; btn.disabled=true;
+  const fd=new FormData(e.target);
+  const name=fd.get('name')||''; const phone=fd.get('phone')||''; const course=fd.get('course')||'';
+  const msg=`Hi! New Enquiry from website:%0AName: ${name}%0APhone: ${phone}%0ACourse: ${course}`;
+  window.open(`https://wa.me/919079368240?text=${msg}`,'_blank');
+  btn.textContent='✅ Sent! We will contact you soon.'; btn.style.background='#16a34a';
+  setTimeout(()=>{btn.textContent='Send Enquiry 🚀';btn.style.background='';btn.disabled=false;e.target.reset();},4000);
+}
+</script>
 </body>
 </html>
